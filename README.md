@@ -1,7 +1,10 @@
 # KrakenTicker
->Simple Ticker for Kraken's exchange
 
-Simple ticker that display and monitors current trading pairs in Kraken's exchange. 
+> A simple Kraken Ticker
+
+![Screenshot](KrakenTicker_MacOS_Screenshot.png)
+
+Simple ticker that display and monitors current trading pairs in Kraken's exchange.
 ### Features
 Standalone ticker widget that display's current market data. Accompanied python script retreives data live, and saves the data into a CSV file.
 Current displayed data:
@@ -11,9 +14,9 @@ Current displayed data:
  - Last Bid Price and Volume
  - Last Ask Price and Volume
  - Last Traded Price and Volume
- - Last time Data were updated 
+ - Last time Data were updated
 
-### Python Script	
+### Python Script
  - Retrives data from Kraken's servers by using their REST API
  - Parses JSON response
  - Formats into CSV
@@ -22,7 +25,7 @@ Current displayed data:
  - Exported data is easily usable with industry standard software like Excel
 
 ### Ticker Widget
-Standalone widget that is not depended on Kraken's web app. Desktop application provides stability, lower latency, and speed boost provided by native code. It is less CPU and Memory intensive than Kraken's web app. It is configurable and convenient. 
+Standalone widget that is not depended on Kraken's web app. Desktop application provides stability, lower latency, and speed boost provided by native code. It is less CPU and Memory intensive than Kraken's web app. It is configurable and convenient.
 
 ### Technology Used
 
@@ -35,9 +38,9 @@ Standalone widget that is not depended on Kraken's web app. Desktop application 
  - Data Management
 
 ## Usage Example
-KrakenTicker is a processing project. You can either open the project in Processing, or use the provided executable to check  BTC/USD pair. Make sure you run the python script inside the data folder to update the CSV files. 
+KrakenTicker is a processing project. You can either open the project in Processing, or use the provided executable to check  BTC/USD pair. Make sure you run the python script inside the data folder to update the CSV files.
 Python script usage:
 
-    ./krakentickercsv symbol 
+    ./krakentickercsv symbol
     ./krakentickercsv XXBTZUSD
-    ./krakentickercsv XXRPZUSD 
+    ./krakentickercsv XXRPZUSD
