@@ -1,4 +1,10 @@
-//Need to handle exception better
+ /*
+ * @author      LuisMQuinones
+ * @modified    November 22, 2020
+ *
+ * Need to handle exception better
+ */
+
 
 import java.io.FileReader;
 

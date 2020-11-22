@@ -1,9 +1,14 @@
-//Today's price start at 00:00:00 UTC
-// Which is 7pm NYC
+ /*
+ * @author      LuisMQuinones
+ * @modified    November 22, 2020
+ *  
+ * Today's price start at 00:00:00 UTC
+ * Which is 7pm NYC
+ *
+ * getter and setters for local variables?
+ * Not intended to be deployable
+ */
 
-//getter and setters for local variables?
-
-//Not intended to be deployable
 
 import java.time.*;
 import java.awt.*;

@@ -1,4 +1,8 @@
-  //Need to find a way to close up resources properly
+ /*
+ * @author      LuisMQuinones
+ * @modified    November 22, 2020
+ */
+
 
 import java.io.*;
 KrakenTickerWidget w1;
