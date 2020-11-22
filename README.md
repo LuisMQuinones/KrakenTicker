@@ -1,14 +1,14 @@
 # KrakenTicker
 
-> A simple Kraken Ticker
+
 
 ![Screenshot](KrakenTicker_MacOS_Screenshot.png)
-Screenshot of ticker in action. Live market data for BTC/USD and XRP/USD are shown respectively.
+Screenshot of ticker in action. Live market data for BTC/USD and XRP/USD are shown, respectively.
 
 
 Simple ticker that display and monitors current trading pairs on Kraken's exchange.
 ### Features
-Standalone ticker widget that display's current market data. Accompanied python script retreives data live, and saves the data into a CSV file.
+Standalone ticker widget that display's current market data. Accompanied python script retrieves data live, and saves the data into a CSV file.
 Current displayed data:
  - 24 Hour Low
  - 24 Hour High
@@ -16,10 +16,10 @@ Current displayed data:
  - Last Bid Price and Volume
  - Last Ask Price and Volume
  - Last Traded Price and Volume
- - Last time Data were updated
+ - Last time Data was updated
 
 ### Python Script
- - Retrives data from Kraken's servers by using their REST API
+ - Retrieves data from Kraken's servers by using their REST API
  - Parses JSON response
  - Formats into CSV
  - saves to text file
@@ -27,7 +27,7 @@ Current displayed data:
  - Exported data is easily usable with industry standard software like Excel
 
 ### Ticker Widget
-Standalone widget that is not depended on Kraken's web app. Desktop application provides stability, lower latency, and speed boost provided by native code. It is less CPU and Memory intensive than Kraken's web app. It is configurable and convenient.
+Standalone widget that is not dependent on Kraken's web app. Desktop application provides stability, lower latency, and speed boost provided by native code. It is less CPU and Memory intensive than Kraken's web app. It is configurable and convenient.
 
 ### Technology Used
 
