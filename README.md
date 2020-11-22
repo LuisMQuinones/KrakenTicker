@@ -3,8 +3,10 @@
 > A simple Kraken Ticker
 
 ![Screenshot](KrakenTicker_MacOS_Screenshot.png)
+Screenshot of ticker in action. Live market data for BTC/USD and XRP/USD are shown respectively.
 
-Simple ticker that display and monitors current trading pairs in Kraken's exchange.
+
+Simple ticker that display and monitors current trading pairs on Kraken's exchange.
 ### Features
 Standalone ticker widget that display's current market data. Accompanied python script retreives data live, and saves the data into a CSV file.
 Current displayed data:
