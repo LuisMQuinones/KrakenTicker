@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
-# Modified from Kraken template code 
-# Usage: ./krakentickercsv symbol start 
+# Modified from Kraken template code
+# Usage: ./krakentickercsv symbol start
 # Example: ./krakenhistory XXBTZUSD 1559347200 1559433600
 
 import sys
@@ -56,7 +56,7 @@ try:
 		bid = api_data["result"][api_symbol]["b"]
 		trade = api_data["result"][api_symbol]["c"]
 		volume = api_data["result"][api_symbol]["v"]
-		o = api_data["result"][api_symbol]["o"] 
+		o = api_data["result"][api_symbol]["o"]
 		numberOfTrades = api_data["result"][api_symbol]["t"][1]
 		lPart = api_data["result"][api_symbol]["l"][1]
 		hPart = api_data["result"][api_symbol]["h"][1]
@@ -64,18 +64,18 @@ try:
 		aPart = "{0},{1}".format(ask[0],ask[2])
 		bPart = "{0},{1}".format(bid[0],bid[2])
 		cPart = "{0},{1}".format(trade[0],trade[1])
-		
+
 		timePart = time.ctime(time.time())
 
 		#print("{0},{1},{2},{3},{4}".format(aPart,bPart,cPart,lPart,hPart))
-		fileName = "{0}.txt".format(api_symbol)
+		fileName = "{0}.csv".format(api_symbol)
 		with open(fileName, 'a') as f:
     			#print >> f, "{0},{1},{2},{3},{4},{5}".format(timePart,aPart,bPart,cPart,lPart,hPart)
 				f.write("{0},{1},{2},{3},{4},{5}\n".format(timePart,aPart,bPart,cPart,lPart,hPart))
 			#print("{0},{1},{2},{3},{4},{5}".format(timePart,aPart,bPart,cPart,lPart,hPart),file=f)
-		
-			
-		
+
+
+
 		#print "out"
 		time.sleep(3.5)
 except KeyboardInterrupt:

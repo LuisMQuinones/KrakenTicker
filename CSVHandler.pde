@@ -1,46 +1,41 @@
  /*
  * @author      LuisMQuinones
- * @modified    November 22, 2020
+ * @modified    DEC 4, 2020
  *
  * Need to handle exception better
  */
 
 
 import java.io.FileReader;
-
-class CSVHandler { 
-  String pathToCSV;
-  BufferedReader reader;
-  FileReader fReader;
-  public CSVHandler(String path) {
-    pathToCSV = path;
-    try {
-      fReader = new FileReader(pathToCSV);
-      reader = new BufferedReader(fReader);
-    }
-    catch(Exception e) {
-      println("FileNotFound");
-    }
+class CSVHandler{
+  
+  String path;
+  Table table;
+  
+  public CSVHandler(String p){
+    path = p;
   }
-
-  //returns "" when last entry is empty
+  
   String[] getLastRow() {
-    // String [] lastRow = new String[9];
 
-    String row="";
-    String last="";
-    try {    
-
-      while ((row = reader.readLine()) != null)
-      {
-        last=row;
-      }
-      //lastRow = last.split(",");
-    }  
-    catch(Exception e) {
-      println("Something went wrong"+e);
-      println(pathToCSV);
+    table = loadTable(path);
+    
+    int index = table.lastRowIndex();
+    int col = table.getColumnCount();
+    String s = table.getString(index,0);
+    
+    
+    for(int i=1 ;i<col; i++){
+     s+=","+table.getString(index,i); 
     }
-    return last.split(",");
-  }
+    
+
+   return s.split(",");     
+    }  
 }
+ 
+ 
+  
+  
+
+  
